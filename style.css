@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ :root{
+ --verde_header:#02A28F;
+ --titulo_seções: white;
+ }
+
+*{  
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+ /* Cabeçalho */
+header{
+    background-color: var(--verde_header);
+}
+
+nav{
+    width: 90vw;
+    max-width: 1440px;
+    margin: auto;
+    background-color: var(--verde_header);
+    padding: 1rem 5rem;   
+}
+.logo{
+    color: var(--titulo_seções);
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+/* Conteúdo */
+main{
+    width: 90vw;
+    max-width: 1440px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap:1.5rem;
+    padding: 3rem 5rem;
+
+}
+.banner{
+    border-radius: 10px;
+    position: relative;
+    background-image: url(/img/banner\ article.png);
+    background-size: cover;
+    height: 25rem;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 0.6rem;
+    padding: 1.5rem;
+    
+    
+}
+.white{
+    color: var(--titulo_seções);
+}
+h1{
+    font-size: 2rem;
+}
+.autor {
+    font-weight: 500;
+}
+
+/* Seção 2 */
+.recent_posts{
+    padding-top: 1.5rem;
+}
+.section_header{
+    border-radius: 0.6rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+h2{
+    font-size: 1.2rem;
+    color: var(--titulo_seções);
+
+}
+.link {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* cards */
+
+.cards_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1.5rem;
+    margin-top: 1.2rem;
+}
+.card{
+    
+    border-radius: 0.6rem;
+    box-shadow: 0 10px 10px 0 #0000001a;
+}
+.card_img{
+    width: 100%;
+}
+.topic{
+    color: var(--verde_header);
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+h4{
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: .5rem;
+}
+.card_content{
+    padding: 1rem;
+    width: 100%;
+}
+.card_content .autor{
+    font-size: .9rem;
+    margin-top: .5rem;
+}
+.card_content .date{
+    font-size: .9rem;
+
+}
+.information{
+    font-weight: 400;
+    font-size: .9rem;
+    margin-top:.5rem;
+}
+
