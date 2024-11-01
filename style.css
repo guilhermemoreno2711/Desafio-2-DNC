@@ -16,11 +16,11 @@ header{
 }
 
 nav{
-    width: 90vw;
+    width:90vw;
     max-width: 1440px;
     margin: auto;
     background-color: var(--verde_header);
-    padding: 1rem 5rem;   
+    padding: 1rem 9.5rem;   
 }
 .logo{
     color: var(--titulo_seções);
@@ -36,7 +36,7 @@ main{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap:1.5rem;
-    padding: 3rem 5rem;
+    padding: 3rem 9.5rem;
 
 }
 .banner{
@@ -73,6 +73,7 @@ h1{
     align-items: center;
     justify-content: space-between;
     padding: 0 1.5rem;
+    box-shadow: 0 10px 10px 0 #0000001a;
 }
 h2{
     font-size: 1.2rem;
@@ -82,6 +83,7 @@ h2{
 .link {
     font-weight: 500;
     font-size: 0.9rem;
+    text-decoration: underline;
 }
 
 /* cards */
@@ -97,9 +99,7 @@ h2{
     border-radius: 0.6rem;
     box-shadow: 0 10px 10px 0 #0000001a;
 }
-.card_img{
-    width: 100%;
-}
+
 .topic{
     color: var(--verde_header);
     font-weight: 400;
@@ -128,3 +128,116 @@ h4{
     margin-top:.5rem;
 }
 
+.gray{
+    color: #616161;
+}
+
+/* Cards laterais */
+
+
+.popular_cards{
+    display:flex;
+    align-items: center;
+    
+    box-shadow: 0 10px 10px 0 #0000001a;
+    border-radius: 0.6rem;
+    margin-top: 1.3rem;
+    padding: 0.5rem;
+}
+
+h5{
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: .5rem;
+}
+
+.category{
+    padding-top: 1rem;
+}
+
+ul{
+    text-decoration: none;
+    padding-top: 0.5rem;
+    
+    
+    
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    font-weight: 600;
+    
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+.footer{
+    background-color: var(--verde_header);
+    padding: 1rem;
+    text-align: center;
+    color: var(--titulo_seções);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+@media only screen  and (max-width:1440px){
+    main{
+        grid-template-columns: 1fr;
+    }
+    .card img{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    main{
+        padding: 1.5rem .5rem;
+    }
+    .logo{
+        text-align: center;
+        
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    nav{
+      
+      padding: 1rem 0;
+    }
+    .logo{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    main{
+        padding: 1rem 0;
+        justify-content: center;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+    .cards_container{
+        grid-template-columns: 1fr;
+    }
+    .section_header{
+        justify-content: center;
+        height: 2.5rem;
+    }
+    .link{
+        padding-left: 1.5rem;
+        font-size: 0.8rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+
+}
+
+    
+   
+    
+    
